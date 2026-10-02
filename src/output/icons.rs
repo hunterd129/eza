@@ -5,7 +5,7 @@
 // SPDX-FileCopyrightText: 2014 Benjamin Sago
 // SPDX-License-Identifier: MIT
 use nu_ansi_term::Style;
-use phf::{Map, phf_map};
+use phf::{phf_map, Map};
 
 use crate::fs::File;
 
@@ -1030,6 +1030,7 @@ const EXTENSION_ICONS: Map<&'static str, char> = phf_map! {
     "tfstate"        => Icons::TERRAFORM,        // 󱁢
     "tfvars"         => Icons::TERRAFORM,        // 󱁢
     "tgz"            => Icons::COMPRESSED,       // 
+    "tzst"           => Icons::COMPRESSED,       // 
     "tif"            => Icons::IMAGE,            // 
     "tiff"           => Icons::IMAGE,            // 
     "tlz"            => Icons::COMPRESSED,       // 
